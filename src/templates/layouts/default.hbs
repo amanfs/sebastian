@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Squada+One" rel="stylesheet">
     <link href="{{assets}}/css/theme.css" rel="stylesheet">
 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -19,13 +21,52 @@
   <body>
 
     <div class="container" role="main">
-
       {{> body }}
-
+      {{> playlist }}
+      {{> gallery }}
+      {{> functions }}
     </div>
 
-    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-    <script src="https://code.jquery.com/jquery.js"></script>
-    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script>
+
+      const mySiema = new Siema({
+        perPage:6,
+        loop: true
+      });
+
+      document.querySelector('.prev').addEventListener('click', () => mySiema.prev());
+      document.querySelector('.next').addEventListener('click', () => mySiema.next());
+
+      $('#gallery-link').click(function() {
+
+        $('#gallery').removeClass('hide'),
+        $('#home').addClass('hide');
+
+
+      });
+
+      $('#playlist-burger').click(function() {
+
+        $('#playlist').removeClass('hide'),
+        $('#home').addClass('hide');
+
+      });
+
+      $('#close-gallery').click(function() {
+
+        $('#gallery').addClass('hide'),
+        $('#home').removeClass('hide');
+
+      });
+
+      $('#close-playlist').click(function() {
+
+        $('#playlist').addClass('hide'),
+        $('#home').removeClass('hide');
+
+      });
+
+    </script>
+
   </body>
 </html>

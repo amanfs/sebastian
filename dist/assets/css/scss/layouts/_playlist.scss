@@ -1,0 +1,14 @@
+.playlist {
+  display:inline-block;
+  &--close {
+    display: block;
+    background-image: url("/assets/images/x.svg");
+  }
+  &--tracks {
+    list-style: none;
+    margin: 0 auto;
+    &--track {
+
+    }
+  }
+}

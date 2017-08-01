@@ -1,5 +1,4 @@
 // Variables
-//––––––––––––––––––––––––––––––––––––––––––––––––––
 
 // Breakpoints
 $bp-larger-than-mobile    : "min-width: 400px" !default;
@@ -10,18 +9,23 @@ $bp-larger-than-desktophd : "min-width: 1200px" !default;
 
 // Colors
 $light-grey: #e1e1e1 !default;
+$light-orange: transparentize(#F5A623, .8) !default;
 $dark-grey: #333 !default;
 $primary-color: #33c3f0 !default;
 $secondary-color: lighten($dark-grey, 13.5%) !default;
 $border-color: #bbb !default;
-$link-color: #1eaedb !default;
-$font-color: #222 !default;
+$orange: #F5A623;
+$orangeFade: rgba($orange, 0.5);
+$white: #ffffff;
+$dark-white: transparentize(#fff, .95) !default;
+$link-color: $white !default;
+$font-color: #fff !default;
 
 // Typography
-$font-family: "Squada One", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
+$font-family: "Open Sans", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif !default;
 
 //Grid Variables
-$container-width: 960px !default;
+$container-width: 1024px !default;
 $container-width-larger-than-mobile: 85% !default;
 $container-width-larger-than-phablet: 80% !default;
 $total-columns: 12 !default;
@@ -30,3 +34,8 @@ $column-margin: 4% !default; // space between columns
 
 // Misc
 $global-radius: 4px !default;
+
+//Defaults
+.hide {
+	display: none !important;
+}

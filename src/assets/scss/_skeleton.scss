@@ -6,6 +6,12 @@
 @import "base/utils";
 @import "base/typography";
 
+/* Layout */
+@import "layouts/main";
+@import "layouts/player";
+@import "layouts/playlist";
+@import "layouts/gallery";
+
 /* Modules */
 @import "modules/grid";
 @import "modules/buttons";

@@ -51,7 +51,7 @@ module.exports = function(grunt) {
         port: 9000,
         livereload: 35729,
         // change this to '0.0.0.0' to access the server from outside
-        hostname: 'localhost'
+        hostname: '0.0.0.0'
       },
       livereload: {
         options: {
@@ -80,12 +80,6 @@ module.exports = function(grunt) {
     },
 
     copy: {
-      bootstrap: {
-        expand: true,
-        cwd: 'bower_components/bootstrap/dist/',
-        src: '**',
-        dest: '<%= config.dist %>/assets/'
-      },
       theme: {
         expand: true,
         cwd: 'src/assets/',

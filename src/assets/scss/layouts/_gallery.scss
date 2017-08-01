@@ -1,0 +1,52 @@
+.gallery {
+  padding-top: 50px;
+  height: 450px;
+  .close {
+    position: fixed;
+    right: 130px;
+    top: 50px;
+    width: 17px;
+    height: 22px;
+    background-image: url("/assets/images/x.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+    &:hover{
+      cursor: pointer;
+    }
+  }
+}
+
+.siema {
+  width: 100%;
+}
+
+.main-img{
+  display: block;
+  margin: 0 15%;
+  height: 100%;
+  background-image: url("/assets/images/main-img.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.img-gallery {
+  padding-top: 2%;
+  display: flex;
+  justify-content: space-between;
+  .prev {
+    margin: 40px 40px;
+    width: 12px;
+    height: 10px;
+    background-image: url("/assets/images/prev.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+  .next {
+    margin: 40px 40px;
+    width: 12px;
+    height: 10px;
+    background-image: url("/assets/images/next.svg");
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
